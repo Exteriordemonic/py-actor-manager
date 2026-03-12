@@ -14,7 +14,7 @@ class ActorManager:
         cursor = self.connection.cursor()
         cursor.execute(
             f"""
-                INSERT INTO {self.table_name} 
+                INSERT INTO {self.table_name}
                 (first_name, last_name)
                 VALUES (?, ?)
             """,
